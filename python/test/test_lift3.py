@@ -1,31 +1,12 @@
 """https://github.com/stevecshanks/lift-kata/blob/master/tests/SmallControllerTest.php"""
-
-class Person:
-
-    def __init__(self, name, queue_position, destination):
-        pass
-
-
-class SmallLift:
-
-    def __init__(self, max_floor):
-        pass
-
-    def getTotalNumberOfVisits(self):
-        return 0
-
-
-class SmallController:
-
-    def __init__(self, lift):
-        pass
-
-    def movePeople(self, people):
-        pass
+from lift3 import Person, SmallLift, SmallController
 
 
 def PeopleHaveArrivedAtTheirDestinations(people):
-    pass
+    for person in people:
+        assert person.destination == person.current_floor, \
+            f"Expected {person.name} to be on floor {person.destination} but they are actually on floor {person.current_floor}"
+
 
 
 def test_PeopleAreTakenToTheirDestinationEfficientlyWithoutExceedingCapacity():
