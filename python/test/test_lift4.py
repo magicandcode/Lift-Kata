@@ -10,6 +10,7 @@ class Direction(Enum):
     UP = 1
     DOWN = 2
 
+
 class Lift:
     def __init__(self, floor, direction):
         self.at = floor

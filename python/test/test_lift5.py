@@ -42,8 +42,8 @@ class LiftTest(Specification):
         with when:
             lift.operate()
         with then:
-            assert lift.getCurrentFloor() == 3
+            lift.getCurrentFloor() == 3
         with when:
             lift.operate()
         with then:
-            assert lift.getCurrentFloor() == 4
+            lift.getCurrentFloor() == 4
