@@ -1,5 +1,3 @@
-"""https://github.com/chgrivas/kata/blob/master/src/test/groovy/com/chgrivas/kata/playground/liftkata/LiftSpec.groovy"""
-
 from behave import when, then, given
 from nimoy.specification import Specification
 

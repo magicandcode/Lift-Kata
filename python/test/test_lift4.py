@@ -1,5 +1,3 @@
-"""https://github.com/alvarogarcia7/lift-kata-kotlin/blob/master/src/test/kotlin/LiftTest.kt"""
-
 from hamcrest import assert_that, equal_to
 
 from lift4 import Direction, Lift

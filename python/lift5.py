@@ -1,3 +1,5 @@
+"""https://github.com/chgrivas/kata/blob/master/src/test/groovy/com/chgrivas/kata/playground/liftkata/LiftSpec.groovy"""
+
 class GreedyLiftCommandHandler:
     pass
 

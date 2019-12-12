@@ -1,4 +1,3 @@
-"""https://github.com/forestfart/oopKata/blob/master/src/test/java/kata/the/elevator/ElevatorTest.java"""
 
 from hamcrest import assert_that, equal_to
 
@@ -22,10 +21,14 @@ def test_current_floor_monitor_displays_current_level():
     currentLevelDisplayStep3 = elevator.currentFloor()
     
     # Then
-    assert_that(currentLevelDisplayStep0, equal_to(floor(2)))
-    assert_that(currentLevelDisplayStep1, equal_to(floor(3)))
-    assert_that(currentLevelDisplayStep2, equal_to(floor(4)))
-    assert_that(currentLevelDisplayStep3, equal_to(floor(0)))
+    assert_that(currentLevelDisplayStep0,
+                equal_to(floor(2)))
+    assert_that(currentLevelDisplayStep1,
+                equal_to(floor(3)))
+    assert_that(currentLevelDisplayStep2,
+                equal_to(floor(4)))
+    assert_that(currentLevelDisplayStep3,
+                equal_to(floor(0)))
 
 
 def test_elevator_will_move_up_and_down_then_standby_until_next_move_down_and_up():

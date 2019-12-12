@@ -1,12 +1,10 @@
-"""https://github.com/stevecshanks/lift-kata/blob/master/tests/SmallControllerTest.php"""
 from lift3 import Person, SmallLift, SmallController
 
 
 def PeopleHaveArrivedAtTheirDestinations(people):
-    for person in people:
-        assert person.destination == person.current_floor, \
-            f"Expected {person.name} to be on floor {person.destination} but they are actually on floor {person.current_floor}"
-
+    for p in people:
+        assert p.destination == p.current_floor, \
+            f"Expected {p.name} to be on floor {p.destination} but they are actually on floor {p.current_floor}"
 
 
 def test_PeopleAreTakenToTheirDestinationEfficientlyWithoutExceedingCapacity():
